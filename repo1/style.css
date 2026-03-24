@@ -1,0 +1,11 @@
+body{
+    background-color: #ba1919;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #3309ef;
+    
+}
