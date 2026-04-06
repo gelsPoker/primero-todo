@@ -1,10 +1,25 @@
-li{
-    color:rgb(55, 218, 82);
+h1{
+    color: red;
+    text-align: center;
+}
 
+/* Seleccionar un estado en especifico */
+/* El hover se activa cuando el mouse esta sobre el elemento */
+h1:hover{
+    color: blue;    
 }
-.ingrediente-faltante{
-    color:rgb(81, 86, 76);
+
+/* El active se activa cuando el elemento esta siendo clickeado */
+h1:active{
+    color: rgb(24, 25, 24);
 }
-.ingrediente-secreto{
-    color: blue;
+
+/* Seleccionar el primer Li*/
+li:first-child{
+    color: rgb(12, 19, 163);
+}
+
+/* Seleccionar el ultimo Li*/
+li:last-child{
+    color: rgb(230, 245, 22);
 }
