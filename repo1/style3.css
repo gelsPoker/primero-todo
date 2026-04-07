@@ -14,3 +14,14 @@ a{
     margin: 20px;
     padding: 10px;
 }
+
+.nav{
+    background-color: #48e;
+}
+.nav__link:hover{
+    background-color: #48e;
+    color: white;
+}
+.nav__list{
+    margin: 0;
+}
