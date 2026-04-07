@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+div {
+    padding: 20px;
+    background-color: #999;
+}
+
+a{
+    background-color: red;
+    color: white;
+    display: block;  /*Ocupar todo el ancho disponible*/
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+}

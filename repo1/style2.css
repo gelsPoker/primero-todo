@@ -21,5 +21,72 @@ li:first-child{
 
 /* Seleccionar el ultimo Li*/
 li:last-child{
-    color: rgb(230, 245, 22);
+    color: rgb(83, 85, 48);
 }
+
+section .elemento1,
+section .elemento2,
+section .elemento3{
+    color: blue;
+    
+}
+/*
+Al usar where() no cambia la especificidad del selector
+*/
+
+section:is(.elemento1, .elemento2, .elemento3){
+    color: blue;
+}
+
+/*
+si el comando es valido se mostarra con color rojo,
+pero si es invalido se mostrara con color amarillo
+*/
+div{
+    padding: 30px;
+}
+}
+input:valid{
+    color: rgb(192, 94, 15);
+}
+input:invalid{
+    color: rgb(253, 237, 10);
+}
+
+/* Pseudoelemento */
+h2::first-letter{
+    color: rgb(80, 30, 215);
+    font-size: 50px;
+}
+/*
+li::before{
+    content: 'Antes:   ';
+    color: red;
+}
+
+li::after{
+    content: '   Despues';
+    color: blue;
+}
+*/
+.lista{
+    border: 2px solid black;
+}
+.lista--vieja{
+    opacity: 0.3;
+}
+.lista__item {
+    color: rgb(177, 249, 9);
+    margin: 10px;
+    list-style: square;
+}
+
+/*
+.item--danino{
+    color: rgb(121, 16, 249);
+}
+.item--sano{
+    color: rgb(79, 7, 234);
+}
+ */
+
