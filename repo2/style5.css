@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+.box{
+    width: 240px;
+    background-color: #ec1008;
+    margin: 50px auto;
+    padding: 10px;
+    border: 6px solid #000; 
+    text-align: center;
+}
+.box:hover{
+    outline: 10px solid #084dd7;
+}
+
+
+
+
+/*
+white-space: nowrap ----> no hay salto de linea.
+overflow: clip; ------> mostrar el contenido pero tiene una ruleta.
+white-space: pre;  ----> tal cual como lo tenemos.
+
+object-fit: contain;   --->  img) se adapta a la caja pero sin perder su proporcion.
+
+
+outline: 5px solid #084dd7; ----> es un borde pero no ocupa espacio.
+
+*/
