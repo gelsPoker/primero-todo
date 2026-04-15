@@ -3,23 +3,32 @@ body{
     font-family: sans-serif;
     background-color: #ccc;
 }
+div, body{
+    box-sizing: border-box;
+}
+
 .flexbox{
     display: flex;
     flex-flow: row wrap;
+    border: 6px solid black;
+    margin: 20px;
+    justify-content: space-evenly;
+
 }
 .flex-item{
     width: 200px;
     text-align: center;
-    background-color: rgb(210, 12, 12);
-    margin: 10px;
+    background-color: rgb(20, 20, 19);
     color: white;
     font-size: 40px;
+    flex-grow: 1;
+
 }
 .flex-item:first-child{
-    background-color: rgb(82, 11, 4);
+    background-color: rgb(247, 26, 6);
 }
 .flex-item:last-child{
-    background-color: rgb(134, 220, 226);
+    background-color: rgb(40, 10, 232);
 }
 
 
@@ -31,7 +40,16 @@ flex-direction: column; --> Las cajas se ordenan de arriba a abajo.
 flex-direction: column-reverse; --> Las cajas se ordenan de abajo a arriba.
 flex-wrap: wrap; --> Las cajas se envuelven a la siguiente línea si no hay espacio suficiente.
 
+justify-content: center; --> Las cajas se centran horizontalmente dentro del contenedor.
+                            (start, end, center, space-between, space-around, space-evenly)
+
+flex-grow: (n); --> Las cajas crecen para llenar el espacio disponible. Si todas las cajas tienen flex-grow: 1, se distribuirán el espacio de manera equitativa entre ellas.
+
+
+
+
 flex-flow es una propiedad abreviada que combina flex-direction y flex-wrap.
+
 
 // cuando ocupo padding, las cajas dejan se ser flexibles. 
 */
