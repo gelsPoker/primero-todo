@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    box-sizing: border-box;
+}
+/* HEADER SECTION */
+
+.header{
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url("lol.webp");
+    display: flex;
+}
+.header__item-container{
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    max-width: 1100px;
+}
+.header__img{
+    min-width: 350px;
+    max-width: 40%;
+    border-radius: 50%;
+    border: 8px solid #111211;
+    display: block; 
+    margin: 0 auto;
+}
+.header__overlay{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(37, 31, 31, 0.4);
+    position: absolute;
+    z-index: 1;
+}
+h1{
+    margin: 0;
+    color: rgb(4, 4, 57);
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+p{
+    color: white;
+    text-align: center;
+
+}
+
+
+/* NAV SECTION */
+
+.nav{
+    background-color: #025f02;
+    display: flex;
+    justify-content: center;
+}
+.nav__ul{
+    margin: 0;
+    display: flex;
+}
+.nav__item{
+    display: inline-block;
+    list-style: none;
+}
+.nav__link{
+    color:rgb(23, 21, 28);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 0;
+    transition:  background-color 0.3s,
+    border-radius 0.24 s;
+}
+.nav__link:hover{
+    color: rgb(238, 238, 238);
+    border-radius: 20px;
+    background-color: rgb(15, 17, 136);
+    outline: 3px solid rgb(10, 10, 10);
+    outline-offset: -6px;
+}
+.link--login{
+    background-color: rgb(15, 216, 49);
+    border-radius: 20px;
+}
+.link--login:hover{
+    background-color: rgb(9, 11, 102);
+}
+
+
+
+
