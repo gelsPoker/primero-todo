@@ -53,7 +53,9 @@ h2{
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    gap: 20px
+    gap: 20px;
+    flex-direction: column;
+
 
 }
 .main-wrapper aside{
@@ -78,6 +80,7 @@ h2{
 }
 
 
+
 /* FOOTER */
 footer{
     /*aliniar al fondo de la pagina*/
@@ -89,11 +92,15 @@ footer{
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 800px) {
     .main-wrapper{
-        flex-direction: column;
-    }
-    .secondary-navbar{
-        min-width: 100%;
+        flex-direction: row;
+
     }
 }
+@media screen and (min-width: 480px) {
+    .aside:last-child{
+        display: block;
+
+    }
+
