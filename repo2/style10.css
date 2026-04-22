@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto min-content 200px;
+    grid-template-rows: 100px 100px 100px;
+}
+.grid-item{
+    background-color: #6636e9;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+/*
+    grid-template-columns: 200px 200px 200px;  ---> 3columnas ---> cuantas columnas quieres tener
+    grid-template-rows: 100px 200px 300px;  ---> 3 filas ---> cuantas filas quieres tener
+    justify-content: center; ---> para centrar el grid
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Si su tamaño es menor o igual a 600px la letra será más grande
+si pasa los 600px, la letra será más pequeña
+debe estar el .container{container-type: inline-size
+@container (max-width: 600px) {
+    p{
+        font-size: 20px;
+    }
+}
+*/
