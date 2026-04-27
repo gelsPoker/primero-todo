@@ -1,20 +1,30 @@
 body{
     margin: 0;
     font-family: sans-serif;
-    background-color: #ccc;
+    background-color: #c1b4b4;
+}
+body, div{
+    box-sizing: border-box;
 }
 .grid{
     display: grid;
-    grid-template-columns: auto min-content 200px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+    padding: 10px;
+    justify-items: stretch;
+
 }
 .grid-item{
-    background-color: #6636e9;
+    background-color: #4302f8;
     padding: 10px;
-    margin: 10px;
     font-size: 20px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -27,6 +37,22 @@ body{
     grid-template-columns: 200px 200px 200px;  ---> 3columnas ---> cuantas columnas quieres tener
     grid-template-rows: 100px 200px 300px;  ---> 3 filas ---> cuantas filas quieres tener
     justify-content: center; ---> para centrar el grid
+    display: grid; ---> para activar el grid
+    gap: 10px; ---> para poner un espacio entre los elementos del grid
+
+
+    column-gap: 10px; ---> para poner un espacio entre las columnas
+    row-gap: 10px; ---> para poner un espacio entre las filas
+    en resumen, gap es una forma más corta de escribir column-gap y row-gap
+    gap: 10px;  
+
+
+    alineacion con grid
+    justify-items: (baseline, start, end, center, left, right, stretch); ---> para alinear los elementos del grid horizontalmente
+    justify-content: (baseline, start, end, center, left, right, stretch); ---> para alinear el grid horizontalmente
+    align-items: (baseline, start, end, center, stretch); ---> para alinear los elementos del grid verticalmente
+    align-content: (baseline, start, end, center, stretch); ---> para alinear el grid verticalmente
+
 
 
 
