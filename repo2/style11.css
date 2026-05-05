@@ -60,17 +60,123 @@ body, div, ul, nav, header, footer, a, li, label{
 .header__nav-item a{
     color: #48e;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 .header__nav-item a:not(:is(:hover,:active)){
     text-decoration: none;
 }
 /*  --------------------   HEADER QUERIES -------------------------*/
 
+/* Cambiar a modo escritorio como se ve*/
 
+@container header (min-width: 700px) {
+    .header__open-nav-button {
+        display: none; /* Ocultamos la hamburguesa */
+    }
+
+    .header__nav {
+        display: block;
+        position: static;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        z-index: 1; 
+    }
+
+    .header__nav-list {
+        flex-direction: row; /* Enlaces en horizontal */
+        height: auto;
+        gap: 30px; 
+        margin: 0 20px 0 0; /* Eliminamos el margin: auto del móvil para que no se rompa */
+    }
+
+    .header__nav-item a {
+        font-size: 1.1rem;
+    }
+}
 
 
 
 
 
 /*  --------------------   HEADER ENDS -------------------------*/
+
+
+/*  --------------------   PROFILE SECTION -------------------------*/
+.profile{
+    container-name: profile;
+    container-type: inline-size;
+}
+
+.profile__Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #fff;
+}
+.profile__data-container{
+    max-width: 600px;
+    padding: 12px;
+}
+.profile__img-container{
+    max-height: 500px;
+    overflow: hidden;
+
+}
+.profile__img{
+    max-width: 100%;
+    width: 750px;
+}
+
+h1{
+    color: #26a;
+}
+.profile__skills-container h2{
+    color: #21a;
+}
+.profile__skill{
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    max-width: 600px;
+    margin-left: 0;
+    align-items: center;
+}
+.load-bar{
+    border: 2px solid #48e;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 2px;
+    font-size: 12px;
+    width: 80%;
+    margin: 4px;
+    margin-left: 0;
+}
+.profile__skill-name{
+    width: 100px;
+    font-weight: 600;
+}
+
+.load-bar__bar{
+    background-color: #48e;
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+.bar--80{
+    width: 80%;
+}
+.bar--60{
+    width: 60%;
+}
+.bar--40{
+    width: 40%;
+}
+.bar--10{
+    width: 10%;
+}
+.bar--95{
+    width: 95%;
+}
+
+/*  --------------------   PROFILE QUERIES -------------------------*/
