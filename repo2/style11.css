@@ -323,6 +323,7 @@ h1{
         grid-column: span 2;  /* El último proyecto ocupa dos columnas */
         grid-row: span 2;     /* El último proyecto ocupa dos filas */
     }
+}
 
 
 
