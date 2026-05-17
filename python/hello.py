@@ -1,5 +1,7 @@
-nombre = input("dame tu nombre:")
-print(f'El nombre mas famoso del actor es {nombre}')
+num1 = 5
+num2 = 3
+resul=num1/num2
+print(resul)
 
 
 
@@ -23,7 +25,7 @@ print(f'El nombre mas famoso del actor es {nombre}')
 
 
 
-# 1:45:00
+# 2:45:00
 
 # DATOS COMPUESTOS 
 # array = [1, 2, 3, 4, 5], ["Ignacio Salazar", "Soy salto",True,1.45]  
