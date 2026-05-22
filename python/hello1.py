@@ -18,3 +18,20 @@ conjunto = set([1,2,3,4,5])
 conjunto1 = set({"juan","benjamin","mendoza"})
 print(conjunto)
 print(conjunto1)
+
+
+print(f' ---------------------------------------------------------------------------------------------')
+print(f' ---------------------------------------------------------------------------------------------')
+print(f' ---------------------------------------------------------------------------------------------')
+
+
+# diccionarios
+# creando un diccionario con dict()
+diccionario = dict(nombre="juan", apellido="benjamin", ciudad="mendoza")
+print(diccionario)
+
+# creanso un dicicoanrio con fromkeys()
+diccionario1 = dict.fromkeys(["nombre","apellido","ciudad"], "desconocido")
+diccionario2 = dict.fromkeys(["nombre","apellido","ciudad"])
+print(diccionario1)
+print(diccionario2)

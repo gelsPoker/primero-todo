@@ -1,7 +1,7 @@
-num1 = 5
-num2 = 3
-resul=num1/num2
-print(resul)
+for numeros in range(10):
+    print(f'la variable numero es: {numeros}')
+else:
+    print('el bucle ha finalizado')
 
 
 
